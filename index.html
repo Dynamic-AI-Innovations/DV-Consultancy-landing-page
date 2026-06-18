@@ -3,27 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="DV Consultancy — end-to-end digital transformation consultancy. Technology builds, brand strategy, and digital growth for SMEs, corporates, and government across Africa and beyond.">
-  <meta name="keywords" content="digital transformation Nigeria, web development Lagos, brand strategy, SEO Nigeria, government technology, DV Consultancy">
+  <meta name="description" content="DV Consultancy — end-to-end digital transformation. Technology, brand, and growth delivered under one roof for businesses and government across Africa and beyond.">
+  <meta name="keywords" content="digital transformation, web development Lagos, brand strategy Nigeria, SEO, government technology, DV Consultancy">
   <meta property="og:title" content="DV Consultancy — Where Technology Meets Growth">
-  <meta property="og:description" content="End-to-end digital transformation for Nigerian businesses and government — technology, brand, and growth under one roof.">
+  <meta property="og:description" content="Technology infrastructure, brand strategy, and performance marketing — delivered as one complete engagement.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#0A1628">  <title>DV Consultancy — Where Technology Meets Growth</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>DV Consultancy &#8212; Where Technology Meets Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  NAVIGATION                                                      -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<nav class="nav" id="navbar">
+<!-- ── NAV ───────────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="dv-logo">
-      <!-- Mark: two overlapping rounded squares — Blue (Dynamics) + Gold (Vicint) -->
-      <svg class="dv-mark" width="40" height="40" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="dv-mark" width="38" height="38" viewBox="0 0 56 56" fill="none">
         <rect x="0" y="0" width="36" height="36" rx="9" fill="#2563EB"/>
         <rect x="16" y="16" width="36" height="36" rx="9" fill="#C9962A" transform="rotate(10, 34, 34)"/>
       </svg>
@@ -33,326 +31,112 @@
         <span class="dv-sub">Consultancy</span>
       </div>
     </a>
-
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
-      <li><a href="#methodology">Methodology</a></li>
       <li><a href="#audiences">Who We Serve</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="tel:+2348000000000" class="nav-phone"><div class="nav-phone-dot"></div>+234 800 000 0000</a></li>
-      <li><a href="#contact" class="btn-primary nav-cta">Start a Project →</a></li>
+      <li><a href="#testimonials">Clients</a></li>
+      <li><a href="#contact" class="nav-cta">Start a Project</a></li>
     </ul>
-
-    <div class="nav-hamburger" onclick="toggleMenu()">
+    <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </div>
 </nav>
 
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  HERO                                                            -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ── HERO ──────────────────────────────────────────────────── -->
 <section class="hero" id="home">
-  <div class="hero-photo"></div>
   <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-noise"></div>
-  <div class="hero-line-left"></div>
-
-  <!-- Brand motif: large outline rounded squares (from the brand mockup) -->
-  <svg class="hero-deco" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Large back shape -->
-    <rect x="80" y="10" width="220" height="220" rx="54" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
-    <!-- Small front shape overlapping bottom-right -->
-    <rect x="150" y="110" width="175" height="175" rx="44" stroke="rgba(191,155,48,0.18)" stroke-width="2"/>
-  </svg>
-
-  <div class="hero-content">
-    <div class="hero-left">
-      <div class="hero-badge">
-        <div class="hero-badge-dot"></div>
-        <span>End-to-End Digital Transformation Consultancy</span>
-      </div>
-
-      <h1 class="hero-h1">
-        Where <span class="gold">Technology</span><br />
-        Meets <span class="teal">Growth.</span>
-      </h1>
-
-      <p class="hero-sub">
-        We don't just consult — we build and grow. Every engagement ends with a
-        functioning, performing digital asset that moves your organisation forward.
-      </p>
-
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-label">End-to-End Digital Transformation Consultancy</div>
+      <h1>Where Technology<br>Meets <span class="gold">Growth.</span></h1>
+      <p class="hero-sub">From codebase to conversion &#8212; technology, brand, and performance marketing delivered under one roof, on one engagement.</p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn-primary">
-          Start Your Transformation →
-        </a>
-        <a href="#services" class="btn-secondary">
-          Explore Services
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-card">
-        <div class="hero-card-icon">⚙️</div>
-        <div class="hero-card-title">Technology Solutions</div>
-        <div class="hero-card-text">Web & App Development, Systems Architecture, IT Infrastructure, UX & Innovation</div>
-      </div>
-      <div class="hero-card">
-        <div class="hero-card-icon">📈</div>
-        <div class="hero-card-title">Growth Solutions</div>
-        <div class="hero-card-text">SEO, Sales Funnels, Email Automation, Social Media, Branding & Video</div>
-      </div>
-      <div class="hero-card">
-        <div class="hero-card-icon">🏛️</div>
-        <div class="hero-card-title">Sectors We Serve</div>
-        <div class="hero-card-text">SMEs, Corporate Enterprises & Government MDAs — across Nigeria, USA, UK & Global</div>
-      </div>
-      <div class="hero-card">
-        <div class="hero-card-icon">🎯</div>
-        <div class="hero-card-title">One Partner, Zero Gaps</div>
-        <div class="hero-card-text">Strategy to execution — complete digital transformation under one accountable partnership</div>
+        <a href="#contact" class="btn-primary">Start a Project</a>
+        <a href="#services" class="btn-outline light">Our Services</a>
       </div>
     </div>
   </div>
-
-  <div class="scroll-indicator">
-    <div class="scroll-mouse"></div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
     <span>Scroll</span>
   </div>
 </section>
 
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  STATS BAR                                                       -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<div class="stats-bar">
-  <div class="stats-inner">
-    <div class="stat-item">
-      <div class="stat-num">314+</div>
-      <div class="stat-detail">
-        <span class="stat-label">Projects Delivered</span>
-        <span class="stat-sub">Across Tech & Growth</span>
+<!-- ── STATS BAR ─────────────────────────────────────────────── -->
+<div class="stats">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-item reveal" data-delay="1">
+        <div class="stat-num" data-target="314" data-suffix="+">314+</div>
+        <div>
+          <span class="stat-label">Projects Delivered</span>
+          <span class="stat-sub">Across all sectors</span>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">99%</div>
-      <div class="stat-detail">
-        <span class="stat-label">Client Satisfaction</span>
-        <span class="stat-sub">Verified & Measured</span>
+      <div class="stat-item reveal" data-delay="2">
+        <div class="stat-num" data-target="99" data-suffix="%">99%</div>
+        <div>
+          <span class="stat-label">Client Satisfaction</span>
+          <span class="stat-sub">Verified reviews</span>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">3</div>
-      <div class="stat-detail">
-        <span class="stat-label">Core Markets</span>
-        <span class="stat-sub">Nigeria · USA · UK</span>
+      <div class="stat-item reveal" data-delay="3">
+        <div class="stat-num" data-target="3" data-suffix="">3</div>
+        <div>
+          <span class="stat-label">Core Markets</span>
+          <span class="stat-sub">Nigeria &#183; UK &#183; USA</span>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">2026</div>
-      <div class="stat-detail">
-        <span class="stat-label">Founded</span>
-        <span class="stat-sub">Lagos, Nigeria</span>
-      </div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">&#8358;1B+</div>
-      <div class="stat-detail">
-        <span class="stat-label">Revenue Generated</span>
-        <span class="stat-sub">For Our Clients</span>
+      <div class="stat-item reveal" data-delay="4">
+        <div class="stat-num" data-target="2026" data-suffix="">2026</div>
+        <div>
+          <span class="stat-label">Founded</span>
+          <span class="stat-sub">Lagos, Nigeria</span>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 
-<!-- ─── CLIENTS TRUST STRIP ──────────────────────────────────── -->
-<div class="clients-strip">
-  <div class="container">
-    <div class="clients-inner">
-      <span class="clients-label">Trusted By</span>
-      <div class="clients-logos">
-        <div class="client-logo">FinTech Nigeria</div>
-        <div class="client-logo">Lagos State MDA</div>
-        <div class="client-logo">AgroTech Ltd</div>
-        <div class="client-logo">PrimeRealty</div>
-        <div class="client-logo">HealthBridge</div>
-        <div class="client-logo">GlobalSaaS Co.</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- ─── PARTNER & CERTIFICATION BADGES ─────────────────────────── -->
-<div class="badges-strip">
-  <div class="container">
-    <div class="badges-inner">
-      <span class="badges-label">Certified &amp; Partnered</span>
-      <div class="badges-grid">
-        <div class="badge-item"><span class="badge-icon">&#128309;</span><span class="badge-name">Google Partner</span></div>
-        <div class="badge-item"><span class="badge-icon">&#128310;</span><span class="badge-name">Meta Business</span></div>
-        <div class="badge-item"><span class="badge-icon">&#129106;</span><span class="badge-name">HubSpot Certified</span></div>
-        <div class="badge-item"><span class="badge-icon">&#128994;</span><span class="badge-name">Shopify Partner</span></div>
-        <div class="badge-item"><span class="badge-icon">&#128311;</span><span class="badge-name">AWS Activate</span></div>
-        <div class="badge-item"><span class="badge-icon">&#127970;</span><span class="badge-name">CAC Registered</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--  ABOUT                                                           -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-grid">
-
-      <div class="about-visual reveal-left">
-        <!-- Photo frame above the quote card -->
-        <div class="about-photo-frame">
-          <img
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80&auto=format&fit=crop"
-            alt="DV Consultancy — professional team collaboration"
-            loading="lazy"
-          />
-          <div class="about-photo-tag">
-            <svg width="14" height="14" viewBox="0 0 56 56" fill="none"><rect width="36" height="36" rx="9" fill="#2563EB"/><rect x="16" y="16" width="36" height="36" rx="9" fill="#C9962A" transform="rotate(10,34,34)"/></svg>
-            <span>Lagos, Nigeria · Est. 2026</span>
-          </div>
-        </div>
-
-        <div class="about-main-card">
-          <div class="about-quote">
-            We don't just consult — we build and grow. Every engagement ends with
-            a functioning, performing digital asset that moves your organisation forward.
-          </div>
-          <div class="about-attr">— The DV Consultancy Promise</div>
-
-          <div class="about-partner-chips">
-            <div class="partner-chip">
-              <svg width="22" height="22" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
-                <rect width="36" height="36" rx="9" fill="#2563EB"/>
-                <rect x="16" y="16" width="36" height="36" rx="9" fill="#C9962A" transform="rotate(10,34,34)" opacity="0.3"/>
-              </svg>
-              <div>
-                <strong>Technology Practice</strong>
-                <span>Engineering &amp; Platforms</span>
-              </div>
-            </div>
-            <div class="partner-chip">
-              <svg width="22" height="22" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
-                <rect width="36" height="36" rx="9" fill="#2563EB" opacity="0.3"/>
-                <rect x="16" y="16" width="36" height="36" rx="9" fill="#C9962A" transform="rotate(10,34,34)"/>
-              </svg>
-              <div>
-                <strong>Vicint Hub</strong>
-                <span>Growth & Marketing</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-accent-bar"></div>
-      </div>
-
-      <div class="about-content reveal-right">
-        <span class="section-label">Our Foundation</span>
-        <span class="gold-rule"></span>
-        <h2>Built for the<br /><span>complete lifecycle.</span></h2>
-        <p>
-          DV Consultancy was founded on a single insight: organisations should not have to choose between a great technology partner and a great growth partner. We built a capability that masters both &#8212; under one roof, on one engagement, with one team accountable for every outcome.
-        </p>
-        <p>
-          The founding insight is simple but powerful: organisations do not need two
-          vendors. They need one trusted partner who can diagnose a digital challenge,
-          architect the solution, build it with precision, and then grow it into a
-          revenue-generating asset.
-        </p>
-
-        <div class="about-values">
-          <div class="value-pill"><span class="value-icon">⭐</span><span>Excellence</span></div>
-          <div class="value-pill"><span class="value-icon">🤝</span><span>Integrity</span></div>
-          <div class="value-pill"><span class="value-icon">💡</span><span>Innovation</span></div>
-          <div class="value-pill"><span class="value-icon">📊</span><span>Impact</span></div>
-          <div class="value-pill"><span class="value-icon">🏆</span><span>Premium</span></div>
-          <div class="value-pill"><span class="value-icon">🔗</span><span>Partnership</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  SERVICES                                                        -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ── SERVICES ──────────────────────────────────────────────── -->
 <section class="services" id="services">
   <div class="container">
     <div class="services-header reveal">
-      <span class="section-label">What We Deliver</span>
-      <span class="gold-rule center"></span>
-      <h2>Complete Digital Transformation.<br />Technology & Growth.</h2>
-      <p>
-        Every engagement draws from both pillars — technology built to last
-        and growth strategies that generate measurable returns.
-      </p>
+      <span class="section-label">What We Do</span>
+      <span class="gold-rule"></span>
+      <h2>Two disciplines.<br>One complete capability.</h2>
     </div>
+    <div class="pillars">
 
-    <div class="services-pillars">
-
-      <div class="pillar pillar-tech reveal" data-delay="1">
-        <div class="pillar-img">
-          <img
-            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80&auto=format&fit=crop"
-            alt="Technology development"
-            loading="lazy"
-          />
+      <div class="pillar reveal" data-delay="1">
+        <span class="pillar-tag">Technology &amp; Engineering</span>
+        <h3>Build the Foundation</h3>
+        <p class="pillar-desc">Robust digital infrastructure engineered to scale with your organisation from day one.</p>
+        <div class="service-list">
+          <div class="service-item">Website &amp; Mobile App Development</div>
+          <div class="service-item">Systems Architecture &amp; Data Management</div>
+          <div class="service-item">IT Infrastructure &amp; Hardware Solutions</div>
+          <div class="service-item">Technology Consulting &amp; Innovation Strategy</div>
+          <div class="service-item">User Experience Optimisation</div>
         </div>
-        <div class="pillar-head">
-          <div class="pillar-icon-wrap">⚙️</div>
-          <div class="pillar-head-text">
-            <h3><span>Technology</span> Solutions</h3>
-            <p>DV's in-house technology practice &#8212; built for scale</p>
-          </div>
-        </div>
-        <div class="pillar-services">
-          <div class="service-item"><div class="service-dot"></div><span>Website & Mobile App Development</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>Data Management & Systems Architecture</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>User Experience Optimisation</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>Technology Consulting & Innovation Strategy</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>IT Infrastructure & Hardware Solutions</span></div>
-        </div>
-        <div class="pillar-corner">TECH</div>
       </div>
 
-      <div class="pillar pillar-growth reveal" data-delay="2">
-        <div class="pillar-img">
-          <img
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&auto=format&fit=crop"
-            alt="Growth marketing and analytics"
-            loading="lazy"
-          />
+      <div class="pillar reveal" data-delay="2">
+        <span class="pillar-tag">Growth &amp; Marketing</span>
+        <h3>Scale the Audience</h3>
+        <p class="pillar-desc">Targeted growth strategy that turns digital presence into measurable revenue.</p>
+        <div class="service-list">
+          <div class="service-item">SEO &amp; Conversion Rate Optimisation</div>
+          <div class="service-item">Sales Funnel Design &amp; Automation</div>
+          <div class="service-item">Email Marketing &amp; Campaigns</div>
+          <div class="service-item">Branding, Design &amp; Video Production</div>
+          <div class="service-item">Social Media &amp; Paid Advertising</div>
         </div>
-        <div class="pillar-head">
-          <div class="pillar-icon-wrap">📈</div>
-          <div class="pillar-head-text">
-            <h3><span>Growth</span> Solutions</h3>
-            <p>DV's growth practice &#8212; 314 projects &#xb7; 99% satisfaction</p>
-          </div>
-        </div>
-        <div class="pillar-services">
-          <div class="service-item"><div class="service-dot"></div><span>SEO & Conversion Rate Optimisation</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>Sales Funnel Marketing</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>Email Marketing & Automation</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>Social Media Marketing</span></div>
-          <div class="service-item"><div class="service-dot"></div><span>Branding, Graphic Design & Video Animation</span></div>
-        </div>
-        <div class="pillar-corner">GROW</div>
       </div>
 
     </div>
@@ -360,142 +144,32 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  METHODOLOGY                                                     -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<section class="methodology" id="methodology">
-  <div class="container">
-    <div class="methodology-header reveal">
-      <span class="section-label">How We Work</span>
-      <span class="gold-rule center"></span>
-      <h2>The DV Delivery Methodology</h2>
-      <p>
-        Every DV Consultancy engagement follows a rigorous four-phase transformation
-        model — from diagnosis to measurable growth.
-      </p>
-    </div>
-
-    <div class="phases">
-      <div class="phase reveal" data-delay="1">
-        <div class="phase-num-wrap">
-          <div class="phase-num">01</div>
-        </div>
-        <div class="phase-title">DISCOVER</div>
-        <div class="phase-tagline">Assess · Diagnose · Plan</div>
-        <div class="phase-desc">
-          Deep-dive into your business, technology stack, and market position.
-          We build a strategic blueprint before a single line of code is written.
-        </div>
-      </div>
-
-      <div class="phase reveal" data-delay="2">
-        <div class="phase-num-wrap">
-          <div class="phase-num">02</div>
-        </div>
-        <div class="phase-title">BUILD</div>
-        <div class="phase-tagline">Design · Develop · Deploy</div>
-        <div class="phase-desc">
-          World-class software development, systems architecture, and infrastructure
-          delivered with precision, quality, and on-time accountability.
-        </div>
-      </div>
-
-      <div class="phase reveal" data-delay="3">
-        <div class="phase-num-wrap">
-          <div class="phase-num">03</div>
-        </div>
-        <div class="phase-title">BRAND</div>
-        <div class="phase-tagline">Position · Design · Equip</div>
-        <div class="phase-desc">
-          Elite visual identity, content systems, and UX design that position
-          your digital asset in the market with authority and distinction.
-        </div>
-      </div>
-
-      <div class="phase reveal" data-delay="4">
-        <div class="phase-num-wrap">
-          <div class="phase-num">04</div>
-        </div>
-        <div class="phase-title">GROW</div>
-        <div class="phase-tagline">Launch · Scale · Optimise</div>
-        <div class="phase-desc">
-          SEO, funnels, automation, and paid campaigns that turn your digital
-          asset into a consistent, measurable revenue engine.
-        </div>
-      </div>
-    </div>
-
-    <div class="phases-cta reveal">
-      <p>Ready to begin your transformation?</p>
-      <a href="#contact" class="btn-primary">Book a Discovery Call →</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  AUDIENCES                                                       -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ── WHO WE SERVE ───────────────────────────────────────────── -->
 <section class="audiences" id="audiences">
   <div class="container">
     <div class="audiences-header reveal">
       <span class="section-label">Who We Serve</span>
       <span class="gold-rule center"></span>
-      <h2>Built for organisations that<br />demand elite results.</h2>
-      <p>
-        Three distinct audiences. One consultancy. The same standard of
-        excellence, credibility, and measurable transformation.
-      </p>
+      <h2>Built for organisations that take digital seriously.</h2>
     </div>
+    <div class="audience-grid">
 
-    <div class="audience-cards">
-
-      <div class="audience-card sme reveal" data-delay="1">
-        <div class="audience-card-img" style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=700&q=80&auto=format&fit=crop')"></div>
-        <span class="audience-icon">🚀</span>
-        <div class="audience-type">SMEs & Startups</div>
-        <h3>Growing Businesses Ready to Compete</h3>
-        <p>
-          You're building something great but losing customers to competitors
-          with better websites, stronger marketing, and smarter tech. We level
-          the field — agency-quality results at a scale that works for you.
-        </p>
-        <div class="audience-message">
-          "We give your business the digital infrastructure and growth engine
-          that enterprise companies have — at a scale that works for you."
-        </div>
+      <div class="audience-card reveal" data-delay="1">
+        <span class="audience-number">01</span>
+        <h3>SMEs &amp; Startups</h3>
+        <p>Digital systems and growth strategy for businesses scaling past their first growth ceiling. Infrastructure that earns its keep from day one.</p>
       </div>
 
-      <div class="audience-card corp reveal" data-delay="2">
-        <div class="audience-card-img" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&q=80&auto=format&fit=crop')"></div>
-        <span class="audience-icon">🏢</span>
-        <div class="audience-type">Corporate Companies</div>
-        <h3>Enterprises Demanding Complete Transformation</h3>
-        <p>
-          Outdated systems, fragmented vendors, accountability gaps. DV Consultancy
-          brings end-to-end capability with the governance and documentation that
-          corporate engagements demand.
-        </p>
-        <div class="audience-message">
-          "End-to-end digital transformation capability — strategy, technology,
-          and growth — with the governance that corporate engagements demand."
-        </div>
+      <div class="audience-card reveal" data-delay="2">
+        <span class="audience-number">02</span>
+        <h3>Corporates</h3>
+        <p>Enterprise-grade platforms and brand strategy for complex organisations. One accountable partner across technology, brand, and performance.</p>
       </div>
 
-      <div class="audience-card gov reveal" data-delay="3">
-        <div class="audience-card-img" style="background-image:url('https://images.unsplash.com/photo-1524522173746-f628baad3644?w=700&q=80&auto=format&fit=crop')"></div>
-        <span class="audience-icon">🏛️</span>
-        <div class="audience-type">Government MDAs</div>
-        <h3>Public Institutions Transforming Citizen Services</h3>
-        <p>
-          Federal and state MDAs require compliance-aware vendors, proper
-          registration, and professional proposals aligned to public sector
-          procurement. DV Consultancy delivers exactly that.
-        </p>
-        <div class="audience-message">
-          "Government-grade digital solutions — technically sound, fully
-          documented, built to serve citizens with reliability and transparency."
-        </div>
+      <div class="audience-card reveal" data-delay="3">
+        <span class="audience-number">03</span>
+        <h3>Government &amp; MDAs</h3>
+        <p>Secure infrastructure and citizen-facing products that meet procurement requirements and deliver measurable service improvements.</p>
       </div>
 
     </div>
@@ -503,208 +177,52 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  WHY DV                                                          -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<section class="why" id="why">
+<!-- ── ABOUT + PROCESS ────────────────────────────────────────── -->
+<section class="about" id="about">
   <div class="container">
-    <div class="why-grid">
+    <div class="about-inner">
 
-      <div class="why-content reveal-left">
-        <span class="section-label">Our Advantage</span>
+      <div class="about-story reveal-left">
+        <span class="section-label">Our Foundation</span>
         <span class="gold-rule"></span>
-        <h2>Why organisations choose<br /><em>DV Consultancy</em>.</h2>
-        <p>
-          We are not a tech agency. We are not a marketing agency. We are the
-          complete digital transformation partner — from the first line of
-          strategy to the last conversion metric.
-        </p>
-
-        <div class="advantages">
-          <div class="advantage">
-            <div class="adv-num">01</div>
-            <div class="adv-text">
-              <strong>End-to-end capability — zero gaps</strong>
-              <span>Tech AND marketing, from code to campaign, in one accountable engagement</span>
-            </div>
-          </div>
-          <div class="advantage">
-            <div class="adv-num">02</div>
-            <div class="adv-text">
-              <strong>Single accountability partner</strong>
-              <span>One relationship, one responsibility, one result — no vendor blame games</span>
-            </div>
-          </div>
-          <div class="advantage">
-            <div class="adv-num">03</div>
-            <div class="adv-text">
-              <strong>African-rooted, globally proven</strong>
-              <span>Nigerian foundation with verified international reach across US, UK, and global markets</span>
-            </div>
-          </div>
-          <div class="advantage">
-            <div class="adv-num">04</div>
-            <div class="adv-text">
-              <strong>Enterprise quality, accessible pricing</strong>
-              <span>Premium outcomes without enterprise-only budget requirements</span>
-            </div>
-          </div>
-          <div class="advantage">
-            <div class="adv-num">05</div>
-            <div class="adv-text">
-              <strong>314+ completed projects, 99% satisfaction</strong>
-              <span>A track record that speaks louder than any promise</span>
-            </div>
-          </div>
+        <h2>Built for the complete lifecycle.</h2>
+        <p>DV Consultancy was founded on a single insight: organisations should not have to choose between a great technology partner and a great growth partner. We built a capability that masters both &#8212; under one roof, on one engagement, with one team accountable for every outcome.</p>
+        <p>Our clients never lose momentum between strategy and execution, between the build and the launch, between the launch and the revenue.</p>
+        <div style="margin-top:36px">
+          <a href="#contact" class="btn-primary">Work With Us</a>
         </div>
       </div>
 
-      <div class="why-comparison reveal-right">
-        <div class="why-photo-wrap">
-          <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80&auto=format&fit=crop"
-            alt="Team collaboration and strategy"
-            loading="lazy"
-          />
-          <span class="why-photo-caption">End-to-end. Accountable. Measurable.</span>
-        </div>
-        <div class="comparison-title">DV vs. Typical Providers</div>
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th>Capability</th>
-              <th>DV</th>
-              <th>Others</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tech Development</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="sometimes">~</span></td>
-            </tr>
-            <tr>
-              <td>Digital Marketing</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="cross">✗</span></td>
-            </tr>
-            <tr>
-              <td>Branding & Design</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="cross">✗</span></td>
-            </tr>
-            <tr>
-              <td>Sales Funnels</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="cross">✗</span></td>
-            </tr>
-            <tr>
-              <td>Hardware Supply</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="cross">✗</span></td>
-            </tr>
-            <tr>
-              <td>Government Fluency</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="cross">✗</span></td>
-            </tr>
-            <tr>
-              <td>Local + Global Reach</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="sometimes">~</span></td>
-            </tr>
-            <tr>
-              <td>Strategy First</td>
-              <td><span class="check">✓</span></td>
-              <td><span class="cross">✗</span></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div style="margin-top: 28px; padding: 20px; background: rgba(191,155,48,0.06); border: 1px solid rgba(191,155,48,0.15);">
-          <p style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 8px;">
-            "Complete digital transformation, from first line of code to first sale."
-          </p>
-          <p style="font-size: 12px; color: rgba(255,255,255,0.4); letter-spacing: 1px; font-family: var(--font-display); text-transform: uppercase;">
-            — DV Consultancy Core Promise
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  PARTNERSHIP                                                     -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<section class="partnership" id="partnership">
-  <div class="container">
-    <div class="partnership-inner">
-
-      <div class="partnership-text reveal-left">
-        <span class="section-label">Our Strength</span>
-        <span class="gold-rule"></span>
-        <h2>Complete capability.<br />One <span class="gold">accountable</span><br />partner.</h2>
-        <p>
-          DV Consultancy was purpose-built to own the full digital transformation lifecycle &#8212; from the first architectural decision to your last conversion milestone. Most agencies operate in one lane. We were designed to operate across all of them.
-        </p>
-        <p>
-          The result: a single engagement covering technology infrastructure, digital products, brand strategy, and performance marketing &#8212; one team, one contract, one team that owns the outcome.
-        </p>
-
-        <div class="synergy-block">
-          <div class="synergy-icon">⚡</div>
-          <div class="synergy-text">
-            <strong>Full-Stack Capability</strong>
-            <span>Technology &#xb7; Brand &#xb7; Growth &#xb7; Data &#xb7; Strategy &#xb7; Execution</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="reveal-right">
-        <div class="partner-cards">
-          <div class="partner-card dynamics">
-            <div class="partner-card-logo">
-              <svg width="32" height="32" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0" y="0" width="36" height="36" rx="9" fill="#2563EB"/>
-                <rect x="16" y="16" width="36" height="36" rx="9" fill="rgba(201,150,42,0.25)" transform="rotate(10, 34, 34)"/>
-              </svg>
-            </div>
-            <div class="partner-card-name">Technology &amp; Engineering</div>
-            <div class="partner-card-role">Platforms &#xb7; Systems &#xb7; Infrastructure</div>
-            <div class="partner-card-services">
-              <div class="partner-service">Web & App Development</div>
-              <div class="partner-service">Systems Architecture</div>
-              <div class="partner-service">IT Infrastructure</div>
-              <div class="partner-service">Innovation Consulting</div>
+      <div class="about-process reveal-right">
+        <h3>How We Work</h3>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <div>
+              <div class="step-title">Discover</div>
+              <div class="step-desc">Stakeholder interviews, digital audit, and maturity assessment. We map where you are before deciding where you go.</div>
             </div>
           </div>
-
-          <div class="partner-card vicint">
-            <div class="partner-card-logo">
-              <svg width="32" height="32" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0" y="0" width="36" height="36" rx="9" fill="rgba(37,99,235,0.2)"/>
-                <rect x="16" y="16" width="36" height="36" rx="9" fill="#C9962A" transform="rotate(10, 34, 34)"/>
-              </svg>
-            </div>
-            <div class="partner-card-name">Vicint Hub</div>
-            <div class="partner-card-role">Growth & Marketing Agency</div>
-            <div class="partner-card-services">
-              <div class="partner-service">SEO & Conversion</div>
-              <div class="partner-service">Sales Funnels</div>
-              <div class="partner-service">Email Automation</div>
-              <div class="partner-service">Brand & Content</div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <div>
+              <div class="step-title">Build</div>
+              <div class="step-desc">Architecture, development, and brand system delivery. Precision-engineered for your audience and infrastructure requirements.</div>
             </div>
           </div>
-        </div>
-
-        <div style="margin-top: 20px; padding: 24px; background: rgba(191,155,48,0.06); border: 1px solid rgba(191,155,48,0.12); display: flex; align-items: center; gap: 16px;">
-          <div style="font-size: 28px;">🌍</div>
-          <div>
-            <div style="font-family: var(--font-display); font-size: 12px; font-weight: 700; color: var(--gold); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px;">Markets Covered</div>
-            <div style="font-size: 13px; color: rgba(255,255,255,0.6);">Nigeria (Primary) · USA · UK · Global Clients</div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <div>
+              <div class="step-title">Launch</div>
+              <div class="step-desc">QA, deployment, and go-to-market coordination. No handoff &#8212; we own the launch alongside you.</div>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <div>
+              <div class="step-title">Grow</div>
+              <div class="step-desc">SEO, campaigns, conversion optimisation, and monthly reporting. We stay engaged until the numbers move.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -714,265 +232,150 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  TESTIMONIALS                                                    -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ── TESTIMONIALS ───────────────────────────────────────────── -->
 <section class="testimonials" id="testimonials">
   <div class="container">
     <div class="testimonials-header reveal">
       <span class="section-label">Client Stories</span>
       <span class="gold-rule center"></span>
       <h2>Real results. Real organisations.</h2>
-      <p>From Lagos startups to government institutions &#8212; here is what our clients say after working with DV Consultancy.</p>
     </div>
-    <div class="testimonials-grid">
+    <div class="testi-grid">
+
       <div class="testi-card reveal" data-delay="1">
         <div class="testi-top">
-          <div class="testi-stars"><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span></div>
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <span class="testi-source">Google Reviews</span>
         </div>
         <p class="testi-quote">&#8220;In the first 3 months after DV Consultancy rebuilt our website and launched our SEO campaign, our inbound leads doubled. We had tried two other agencies before &#8212; none came close to this level of execution.&#8221;</p>
         <div class="testi-person">
           <img class="testi-avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&q=80&auto=format&fit=crop&crop=face" alt="Emeka Okafor" loading="lazy" />
-          <div><span class="testi-name">Emeka Okafor</span><span class="testi-role">CEO, FinBridge Nigeria Ltd</span></div>
+          <div>
+            <span class="testi-name">Emeka Okafor</span>
+            <span class="testi-role">CEO, FinBridge Nigeria Ltd</span>
+          </div>
         </div>
-        <div class="testi-result">+112% leads in 90 days</div>
+        <div class="testi-result">+112% inbound leads in 90 days</div>
       </div>
+
       <div class="testi-card reveal" data-delay="2">
         <div class="testi-top">
-          <div class="testi-stars"><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span></div>
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <span class="testi-source">Clutch.co</span>
         </div>
         <p class="testi-quote">&#8220;DV Consultancy delivered our enterprise platform on time, within budget, and with full documentation. Their ability to handle both technology architecture and brand identity in one engagement was exactly what we needed.&#8221;</p>
         <div class="testi-person">
           <img class="testi-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80&auto=format&fit=crop&crop=face" alt="Adaeze Nwachukwu" loading="lazy" />
-          <div><span class="testi-name">Adaeze Nwachukwu</span><span class="testi-role">CTO, PrimeRealty Group</span></div>
+          <div>
+            <span class="testi-name">Adaeze Nwachukwu</span>
+            <span class="testi-role">CTO, PrimeRealty Group</span>
+          </div>
         </div>
-        <div class="testi-result">Platform delivered on time &amp; on budget</div>
+        <div class="testi-result">Platform delivered on time and on budget</div>
       </div>
+
       <div class="testi-card reveal" data-delay="3">
         <div class="testi-top">
-          <div class="testi-stars"><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span><span class="testi-star">&#9733;</span></div>
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <span class="testi-source">Verified Client</span>
         </div>
-        <p class="testi-quote">&#8220;As a government agency, finding a vendor who understands procurement AND delivers technically sound digital solutions is rare. DV Consultancy brought both &#8212; and the citizen portal they built has been our highest-rated service launch.&#8221;</p>
+        <p class="testi-quote">&#8220;Finding a vendor who understands government procurement AND delivers technically sound digital solutions is rare. DV Consultancy brought both &#8212; and the citizen portal they built has been our highest-rated service launch.&#8221;</p>
         <div class="testi-person">
           <img class="testi-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&auto=format&fit=crop&crop=face" alt="Director Suleiman Bello" loading="lazy" />
-          <div><span class="testi-name">Dir. Suleiman Bello</span><span class="testi-role">Director of ICT, Lagos State MDA</span></div>
+          <div>
+            <span class="testi-name">Dir. Suleiman Bello</span>
+            <span class="testi-role">Director of ICT, Lagos State MDA</span>
+          </div>
         </div>
         <div class="testi-result">Highest-rated citizen portal launch</div>
       </div>
-    </div>
-    <div class="testimonials-aggregate reveal">
-      <div class="agg-item"><span class="agg-num">314+</span><span class="agg-label">Projects Delivered</span></div>
-      <div class="agg-divider"></div>
-      <div class="agg-item"><span class="agg-num">99%</span><span class="agg-label">Satisfaction Rate</span></div>
-      <div class="agg-divider"></div>
-      <div class="agg-item"><span class="agg-num">5&#9733;</span><span class="agg-label">Average Rating</span></div>
-      <div class="agg-divider"></div>
-      <div class="agg-item"><span class="agg-num">&#8358;1B+</span><span class="agg-label">Client Revenue</span></div>
+
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  INSIGHTS                                                        -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<section class="insights" id="insights">
+
+<!-- ── CTA BAND ───────────────────────────────────────────────── -->
+<section class="cta">
   <div class="container">
-    <div class="insights-header reveal">
-      <div class="insights-header-left">
-        <span class="section-label">Thought Leadership</span>
-        <h2>Insights from the<br />frontline of transformation.</h2>
+    <div class="cta-inner">
+      <div>
+        <h2>Ready to transform<br>your organisation?</h2>
+        <p>Book a free discovery call. We will audit your current digital position and show you exactly where the opportunity is.</p>
       </div>
-      <a href="#contact" class="btn-secondary" style="flex-shrink:0">View All Articles &#8594;</a>
-    </div>
-    <div class="insights-grid">
-      <div class="insight-card reveal" data-delay="1">
-        <div class="insight-img">
-          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80&auto=format&fit=crop" alt="Digital growth" loading="lazy" />
-          <span class="insight-cat">Growth</span>
-        </div>
-        <div class="insight-body">
-          <div class="insight-meta"><span class="insight-date">June 12, 2026</span><span class="insight-min">6 min read</span></div>
-          <h3 class="insight-title">Why Nigerian SMEs Are Losing Business to Competitors With Better Websites</h3>
-          <p class="insight-excerpt">The gap between businesses that invest in their digital presence and those that do not is widening fast. Here is what the data shows &#8212; and how to close it.</p>
-          <span class="insight-read">Read Article &#8594;</span>
-        </div>
-      </div>
-      <div class="insight-card reveal" data-delay="2">
-        <div class="insight-img">
-          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=700&q=80&auto=format&fit=crop" alt="Strategy" loading="lazy" />
-          <span class="insight-cat">Strategy</span>
-        </div>
-        <div class="insight-body">
-          <div class="insight-meta"><span class="insight-date">May 28, 2026</span><span class="insight-min">8 min read</span></div>
-          <h3 class="insight-title">End-to-End Digital Transformation: What It Really Means for Your Organisation</h3>
-          <p class="insight-excerpt">Most organisations confuse digitisation with digital transformation. We break down what a genuine end-to-end engagement looks like &#8212; from first discovery to last growth metric.</p>
-          <span class="insight-read">Read Article &#8594;</span>
-        </div>
-      </div>
-      <div class="insight-card reveal" data-delay="3">
-        <div class="insight-img">
-          <img src="https://images.unsplash.com/photo-1524522173746-f628baad3644?w=700&q=80&auto=format&fit=crop" alt="Government" loading="lazy" />
-          <span class="insight-cat">Government</span>
-        </div>
-        <div class="insight-body">
-          <div class="insight-meta"><span class="insight-date">April 14, 2026</span><span class="insight-min">5 min read</span></div>
-          <h3 class="insight-title">How Government MDAs Can Improve Citizen Services With Digital Infrastructure</h3>
-          <p class="insight-excerpt">From legacy systems to responsive citizen portals &#8212; a practical framework for public sector digital transformation that meets procurement requirements and delivers results.</p>
-          <span class="insight-read">Read Article &#8594;</span>
-        </div>
+      <div class="cta-actions">
+        <a href="#contact" class="btn-primary">Start a Project</a>
+        <a href="mailto:hello@dvconsultancy.com" class="btn-outline light">hello@dvconsultancy.com</a>
       </div>
     </div>
   </div>
 </section>
 
-<!--  CTA BANNER                                                      -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<section class="cta-section">
-  <div class="cta-inner reveal">
-    <div class="cta-text">
-      <span class="section-label" style="color: rgba(191,155,48,0.8);">Ready to Transform?</span>
-      <h2 style="margin-top: 16px;">
-        One partner. Every digital need.<br />
-        <span class="gold">Zero gaps.</span>
-      </h2>
-      <p>
-        From strategy to execution — DV Consultancy delivers the complete
-        digital journey. Technology that works. Marketing that converts.
-        Transformation that lasts.
-      </p>
-    </div>
-    <div class="cta-actions">
-      <a href="#contact" class="btn-primary">Book a Discovery Call →</a>
-      <a href="#services" class="btn-secondary">View All Services</a>
-      <div class="cta-contact-mini">hello@dvconsultancy.com</div>
-    </div>
-  </div>
-</section>
 
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  CONTACT                                                         -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ── CONTACT ────────────────────────────────────────────────── -->
 <section class="contact" id="contact">
   <div class="container">
-    <div class="contact-header reveal">
-      <span class="section-label">Get In Touch</span>
-      <span class="gold-rule center"></span>
-      <h2>Start Your Digital Transformation</h2>
-    </div>
+    <div class="contact-inner">
 
-    <div class="contact-grid">
-
-      <div class="contact-form reveal-left">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">First Name</label>
-            <input class="form-input" type="text" placeholder="John" />
+      <div class="contact-info reveal-left">
+        <span class="section-label">Get in Touch</span>
+        <span class="gold-rule"></span>
+        <h2>Let&#8217;s talk about your project.</h2>
+        <p>Tell us what you are building. We will come back within one business day with a clear assessment of how we can help.</p>
+        <div class="contact-details">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <span class="contact-val">hello@dvconsultancy.com</span>
           </div>
-          <div class="form-group">
-            <label class="form-label">Last Name</label>
-            <input class="form-input" type="text" placeholder="Smith" />
+          <div class="contact-row">
+            <span class="contact-label">Phone</span>
+            <span class="contact-val">+234 800 000 0000</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Location</span>
+            <span class="contact-val">Lagos, Nigeria &#8212; serving clients globally</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Response Time</span>
+            <span class="contact-val">Within 1 business day</span>
           </div>
         </div>
-
-        <div class="form-group">
-          <label class="form-label">Email Address</label>
-          <input class="form-input" type="email" placeholder="john@company.com" />
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">Organisation</label>
-          <input class="form-input" type="text" placeholder="Your company or agency name" />
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">You Are</label>
-          <select class="form-select form-input">
-            <option value="">Select your organisation type...</option>
-            <option>SME / Growing Business</option>
-            <option>Corporate Enterprise</option>
-            <option>Government MDA</option>
-            <option>Startup / Founder</option>
-            <option>Other</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">Services Interested In</label>
-          <select class="form-select form-input">
-            <option value="">What can we help with?</option>
-            <option>Technology Solutions Only</option>
-            <option>Growth Solutions Only</option>
-            <option>Complete Digital Transformation (Both)</option>
-            <option>Not sure — need guidance</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label">Tell Us About Your Project</label>
-          <textarea class="form-textarea" placeholder="Briefly describe your challenge or goal..."></textarea>
-        </div>
-
-        <button class="btn-primary" style="width: 100%; justify-content: center;">
-          Send Message — We Respond Within 24hrs →
-        </button>
       </div>
 
-      <div class="contact-info reveal-right">
-        <p class="contact-intro">
-          We'd love to understand your challenge. Fill in the form and a DV Consultancy
-          partner will be in touch within one business day to schedule a discovery call.
-        </p>
-
-        <div class="contact-details">
-          <div class="contact-item">
-            <div class="contact-item-icon">📧</div>
-            <div class="contact-item-text">
-              <strong>Email</strong>
-              <span>hello@dvconsultancy.com</span>
+      <div class="reveal-right">
+        <form class="contact-form" onsubmit="return false">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+            </div>
+            <div class="form-field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your company" />
             </div>
           </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">🌍</div>
-            <div class="contact-item-text">
-              <strong>Website</strong>
-              <span>dvconsultancy.com</span>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" />
+            </div>
+            <div class="form-field">
+              <label for="service">Service Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option>Technology &amp; Engineering</option>
+                <option>Growth &amp; Marketing</option>
+                <option>Full Transformation</option>
+                <option>Discovery Call</option>
+              </select>
             </div>
           </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">📍</div>
-            <div class="contact-item-text">
-              <strong>Location</strong>
-              <span>Lagos, Nigeria — with US & UK reach</span>
-            </div>
+          <div class="form-field">
+            <label for="message">Project Brief</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project, goals, and timeline&#8230;"></textarea>
           </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">⏱️</div>
-            <div class="contact-item-text">
-              <strong>Response Time</strong>
-              <span>Within 1 business day</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="powered-by">
-          <span>Powered by</span>
-          <strong>DV Consultancy</strong>
-        </div>
-
-        <div style="padding: 28px; background: rgba(18,35,61,0.5); border: 1px solid rgba(255,255,255,0.07);">
-          <div style="font-family: var(--font-display); font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; margin-bottom: 16px;">Partnership Opportunities</div>
-          <p style="font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 16px;">
-            Interested in co-delivering projects, joint proposals, or a formal referral agreement? Let's explore partnership.
-          </p>
-          <a href="mailto:hello@dvconsultancy.com" class="btn-secondary" style="font-size: 11px; padding: 10px 20px;">
-            Explore Partnership →
-          </a>
-        </div>
+          <button type="submit" class="btn-primary" style="align-self:flex-start;margin-top:8px">Send Enquiry</button>
+        </form>
       </div>
 
     </div>
@@ -980,97 +383,50 @@
 </section>
 
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  FOOTER                                                          -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
 <footer class="footer">
   <div class="container">
-
-    <div class="footer-grid">
-
-      <div class="footer-brand">
-        <div class="footer-logo-wrap">
-          <a href="#" class="dv-logo lg">
-            <svg class="dv-mark" width="44" height="44" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0" y="0" width="36" height="36" rx="9" fill="#2563EB"/>
-              <rect x="16" y="16" width="36" height="36" rx="9" fill="#C9962A" transform="rotate(10, 34, 34)"/>
-            </svg>
-            <div class="dv-divider"></div>
-            <div class="dv-wordmark">
-              <span class="dv-name">DV</span>
-              <span class="dv-sub">Consultancy</span>
-            </div>
-          </a>
-        </div>
-        <p class="footer-tagline">
-          End-to-end digital transformation for organisations that demand
-          elite results — technology built right, growth done consistently.
-        </p>
-        <div class="footer-socials">
-          <a href="#" class="social-btn" title="LinkedIn">in</a>
-          <a href="#" class="social-btn" title="Twitter">𝕏</a>
-          <a href="#" class="social-btn" title="Instagram">ig</a>
-          <a href="#" class="social-btn" title="Facebook">f</a>
-        </div>
+    <div class="footer-top">
+      <div>
+        <a href="#" class="dv-logo footer-logo">
+          <svg class="dv-mark" width="34" height="34" viewBox="0 0 56 56" fill="none">
+            <rect x="0" y="0" width="36" height="36" rx="9" fill="#2563EB"/>
+            <rect x="16" y="16" width="36" height="36" rx="9" fill="#C9962A" transform="rotate(10, 34, 34)"/>
+          </svg>
+          <div class="dv-divider"></div>
+          <div class="dv-wordmark">
+            <span class="dv-name">DV</span>
+            <span class="dv-sub">Consultancy</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Where Technology Meets Growth. End-to-end digital transformation for organisations that mean business.</p>
       </div>
-
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">Web & App Development</a></li>
-          <li><a href="#services">Systems Architecture</a></li>
-          <li><a href="#services">SEO & Conversion</a></li>
-          <li><a href="#services">Sales Funnel Marketing</a></li>
-          <li><a href="#services">Email Automation</a></li>
-          <li><a href="#services">Branding & Design</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#about">About DV Consultancy</a></li>
-          <li><a href="#methodology">Our Methodology</a></li>
-          <li><a href="#partnership">Our Capability</a></li>
+          <li><a href="#services">Technology &amp; Engineering</a></li>
+          <li><a href="#services">Growth &amp; Marketing</a></li>
+          <li><a href="#about">Our Process</a></li>
           <li><a href="#audiences">Who We Serve</a></li>
-          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
           <li><a href="#about">About DV Consultancy</a></li>
-          <li><a href="#partnership">Our Capability</a></li>
-          <li><a href="#contact">Referral Programme</a></li>
+          <li><a href="#testimonials">Client Stories</a></li>
           <li><a href="#contact">Work With Us</a></li>
+          <li><a href="#contact">Referral Programme</a></li>
         </ul>
       </div>
-
     </div>
-
-    <div class="footer-gold-rule">
-      <span>DV Consultancy</span>
-    </div>
-
     <div class="footer-bottom">
-      <p>
-        © 2024 <strong>DV Consultancy</strong>. All rights reserved. Lagos, Nigeria.
-      </p>
-      <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Brand Usage</a>
-      </div>
+      <p>&#169; 2026 <strong>DV Consultancy</strong>. All rights reserved. Lagos, Nigeria.</p>
+      <p>Where Technology Meets Growth.</p>
     </div>
-
   </div>
 </footer>
 
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!--  JAVASCRIPT                                                      -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
