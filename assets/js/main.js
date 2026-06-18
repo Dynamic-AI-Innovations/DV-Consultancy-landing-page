@@ -1,10 +1,10 @@
-﻿  /* â”€â”€â”€ STICKY NAV â”€â”€â”€ */
+﻿  /* ─── STICKY NAV ─── */
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 40);
   });
 
-  /* â”€â”€â”€ MOBILE MENU â”€â”€â”€ */
+  /* ─── MOBILE MENU ─── */
   function toggleMenu() {
     const links = document.querySelector('.nav-links');
     links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
@@ -19,7 +19,7 @@
     links.style.borderBottom = '1px solid rgba(191,155,48,0.2)';
   }
 
-  /* â”€â”€â”€ SCROLL REVEAL â”€â”€â”€ */
+  /* ─── SCROLL REVEAL ─── */
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -32,7 +32,7 @@
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right')
     .forEach(el => observer.observe(el));
 
-  /* â”€â”€â”€ COUNTER ANIMATION â”€â”€â”€ */
+  /* ─── COUNTER ANIMATION ─── */
   function animateCounter(el, target, suffix = '') {
     let start = 0;
     const duration = 1800;
@@ -61,7 +61,7 @@
   const statsBar = document.querySelector('.stats-bar');
   if (statsBar) statsObserver.observe(statsBar);
 
-  /* â”€â”€â”€ SMOOTH ANCHOR SCROLL â”€â”€â”€ */
+  /* ─── SMOOTH ANCHOR SCROLL ─── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const target = document.querySelector(a.getAttribute('href'));
@@ -75,7 +75,7 @@
     });
   });
 
-  /* â”€â”€â”€ HERO PARALLAX â”€â”€â”€ */
+  /* ─── HERO PARALLAX ─── */
   window.addEventListener('scroll', () => {
     const hero = document.querySelector('.hero-bg');
     if (hero) {
