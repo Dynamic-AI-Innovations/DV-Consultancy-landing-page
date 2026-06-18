@@ -124,12 +124,35 @@ ul { list-style: none; }
   min-height: 100vh; background: var(--navy);
   position: relative; display: flex; align-items: center; overflow: hidden;
 }
-.hero-bg {
+
+/* Photo slider */
+.hero-slides { position: absolute; inset: 0; z-index: 0; }
+.hero-slide {
   position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 60% 50% at 75% 50%, rgba(0,91,110,0.18) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 5% 85%, rgba(191,155,48,0.07) 0%, transparent 60%);
+  background-size: cover; background-position: center;
+  opacity: 0;
+  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
 }
+.hero-slide::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(10,22,40,0.88) 0%, rgba(10,22,40,0.72) 50%, rgba(0,91,110,0.45) 100%);
+}
+.hero-slide.active { opacity: 1; }
+
+/* Slide nav dots */
+.hero-nav {
+  position: absolute; bottom: 36px; right: 44px;
+  display: flex; gap: 8px; z-index: 2;
+}
+.hero-dot {
+  width: 28px; height: 2px;
+  background: rgba(255,255,255,0.28);
+  border: none; padding: 0; cursor: pointer;
+  transition: background 0.3s, width 0.35s cubic-bezier(0.22,1,0.36,1);
+}
+.hero-dot.active { background: var(--gold); width: 52px; }
 .hero-content { position: relative; z-index: 1; max-width: 680px; padding: 120px 0 80px; }
 .hero-label {
   font-family: var(--font-display); font-size: 10px; font-weight: 700;
