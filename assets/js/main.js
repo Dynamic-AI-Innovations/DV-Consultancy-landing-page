@@ -1,4 +1,7 @@
-﻿// ── STICKY NAV
+﻿// Mark body so CSS knows JS loaded — elements are visible by default without this
+document.body.classList.add('js-ready');
+
+// ── STICKY NAV
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 50);
@@ -10,6 +13,7 @@ function toggleMenu() {
 }
 
 // ── SCROLL REVEAL
+// threshold:0 fires as soon as 1px of element enters viewport
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -17,7 +21,8 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(e.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+
 document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
 
 // ── ANIMATED COUNTERS (data-target driven)
@@ -45,7 +50,8 @@ const counterObserver = new IntersectionObserver((entries) => {
       counterObserver.unobserve(e.target);
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.3 });
+
 document.querySelectorAll('.stat-num[data-target]').forEach(el => counterObserver.observe(el));
 
 // ── SMOOTH SCROLL + CLOSE MOBILE MENU
